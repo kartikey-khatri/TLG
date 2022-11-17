@@ -1,5 +1,5 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
     "configName": {
@@ -46,7 +46,7 @@
       "metadata": {
         "description": "Choose 'No' to deploy no client VM, or 'Yes' if you want to deploy a client VM from a custom generalized VHD that you have uploaded to an accessible storage account."
       },
-      "defaultValue": "Yes"
+      "defaultValue": "No"
     },
     "clientVhdUri": {
       "type": "string",
@@ -60,7 +60,7 @@
       "metadata": {
         "description": "Select a VM size for all VMs in your deployment."
       },
-      "defaultValue": "Standard_DS2_v2"
+      "defaultValue": "Standard_D2ads_v5"
     },
     "dnsLabelPrefix": {
       "type": "string",
@@ -73,7 +73,7 @@
       "metadata": {
         "description": "Auto-generated container in staging storage account to receive post-build staging folder upload."
       },
-      "defaultValue": "https://raw.githubusercontent.com/maxskunkworks/tlg/master/tlg-base-config_3-vm"
+      "defaultValue": "https://raw.githubusercontent.com/kartikey-khatri/TLG/tree/master/tlg-base-config_3-vm"
     },
     "_artifactsLocationSasToken": {
       "type": "securestring",
