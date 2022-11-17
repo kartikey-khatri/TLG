@@ -30,13 +30,15 @@
       "type": "string",
       "metadata": {
         "description": "The name of the domain administrator account to create, i.e. globaladmin. This will also be used to create a local admin account on each VMs."
-      }
+      },
+      "defaultValue": "demouser"
     },
     "adminPassword": {
       "type": "securestring",
       "metadata": {
         "description": "The administrator account password."
-      }
+      },
+      "defaultValue": "demo@pass123"
     },
     "deployClientVm": {
       "type": "string",
