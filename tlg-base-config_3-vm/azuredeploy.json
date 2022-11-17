@@ -68,14 +68,15 @@
       "type": "string",
       "metadata": {
         "description": "DNS label prefix for public IPs. Must be lowercase and match the regular expression: ^[a-z][a-z0-9-]{1,61}[a-z0-9]$."
-      }
+      },
+      "defaultValue": "contosohybrid522"
     },
     "_artifactsLocation": {
       "type": "string",
       "metadata": {
         "description": "Auto-generated container in staging storage account to receive post-build staging folder upload."
       },
-      "defaultValue": "https://raw.githubusercontent.com/kartikey-khatri/TLG/tree/master/tlg-base-config_3-vm"
+      "defaultValue": "https://raw.githubusercontent.com/kartikey-khatri/TLG/master/tlg-base-config_3-vm"
     },
     "_artifactsLocationSasToken": {
       "type": "securestring",
